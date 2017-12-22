@@ -1,0 +1,185 @@
+IBM BPM Interview Questions
+
+What is an IBM BPM?
+
+IBM Business Process Manager (IBPM) provides a platform on which Business Processes can be described, implemented, executed and monitored.
+
+What are Teamworks Components?
+
+Shared Model : Stores all Process, Services,Performance Data,Business Events and Conditions.
+
+Process Server:Executes the Process and Services that authors build using Teamworks Authoring Environment.
+
+Performance Server: Manages and aggregate Process Performance data and monitors business events and conditions.
+
+Server Consoles: provide interfaces that enables administrator to configure and maintain the Process
+
+Server and performance Server other users may have limited access to change password and perform other basic tasks.
+
+Authoring Environment: Eclipse based development Environment consists of several interfaces that enable authors to Model, Simulate and Inspect processes. Available interfaces include Service Modeler, Process Inspector, Process Molder.
+
+Process portal: Enables process participants to perform assigned task,view the history of task,launch any processes or services that are attached to task and view the performance of their processes and teams.Tools available from the process portal include Scoreboards.
+
+What is a Process in IBM BPM ?
+
+A process is like a Program that does works inside Teamworks. It has a starting point and at least one exit point.
+
+What is an Activity in IBM BPM?
+
+An Activity represents a logical unit of work that can be execute at run time by a Human or  System.
+
+What are Variables(Business Objects) in IBM BPM?
+
+Business objects are called variables in Teamworks represent the data that provides the data that provides the business context to a running process. There are two types of variables -Simple And Complex variables have different scopes- private Input and Output.
+
+In production one instance has been failed due to some business object has bad data or null values, How will you inject data on runtime in production?
+
+IBPM provide some rest api which operation name is setData through that we can inject values.
+
+I have one BPD, which has multiple tasks. How will you identify user in run-time and assign the task based on his role?
+
+Its related to routing.
+
+How will you start BPM from out side?
+
+There are 4 ways:
+
+– Expose as a webservice like WSDL and call it from outside and inside the BPM call in javascript ‘startBPMByProcessName()’.
+
+– BPM API expose as rest service to start the BPM process.
+
+– Through JMS, we can start bpm process.
+
+– Through Java api we can start the bpm process.
+
+What is the difference between process app and toolkit?
+
+Process App is deployable but toolkit is not deployable it should be integrate
+
+How will you maintain version in bpm?
+
+We can create snapshot.
+
+What are coaches and coach views? What is the primary function of coaches?
+
+Coaches are the name for the web pages (user interface) that IBM Process Designers allows to work on to build the human interaction. Coach views are new in BPM v8, where they are basically re-usable templates. We can create coach views for business objects, and re-use them in multiple coaches.
+
+What has changed in coaches in IBM BPM V8?
+
+Coach views are a major addition. Improved error handline, and termination handling. Content Management integration, and other of bug fixes.
+
+What are the different “Visibility” options you have in IBM BPM V8?
+
+Default(inherited), required, editable, read-only, none (hide or disabled).
+
+What is Teamworks?
+
+Teamworks is a BPM tool developed by Lombardi Software.
+
+Teamworks architecture enables all groups with with in your enterprise to collaborate to design and deploy efficient processes.
+
+Teamworks also allows you to manage and analyze process performance.
+
+Teamworks is having Eclipse based Authoring Environment integrates with your other development tools.
+
+What is the Components of IBM BPM?
+
+At a high level, IBPM is comprised of a number of coarse grained components. Taken together, these are the IBPM product. Each component serves a unique and distinct purpose and are employed at different stages in the development or operation of an IBPM solution. Breaking IBPM down into these constituent components both aids in the understanding of the product as well as providing a practical differentiation between phases and pieces of operation.
+
+Process Server
+
+Process Designer
+
+Process Center
+
+Performance Data Warehouse
+
+Process Center Console
+
+Process Portal
+
+Process Admin Console
+
+What is Durable Subscription?
+
+When a message is sent to an user who is offline, the message waits in the queue and gets delivered when the user appears online again. This phenomenon is called as “Durable Subscription”.
+
+How a BPD can be divided into?
+
+The BPD can be divided into Lanes and Milestones. The horizontal lines are called Lanes and vertical ones are called Milestones.
+
+How will you access processes in BPM?
+
+You can Start, Stop, Control and Monitor Processes using Process Portal.
+
+What is an Activity in IBM BPM?
+
+An Activity represents a logical unit of work that can be execute at run time by a Human or System.
+
+Learn more about IBM BPM Interview Questions in this blog post.
+Interested in mastering IBM BPM? 
+Check out this blog post to learn more IBM BPM Tutorials.
+
+What are Variables (Business Objects) in IBM BPM?
+
+Business objects are called variables in Teamworks represent the data that provides the data that provides the business context to a running process. There are two types of variables -Simple and Complex variables have different scopes- private Input and Output.
+
+How do you get an element by id in dojo?
+
+dojo.byId(‘someId’);
+
+How will you inject data on runtime in production?
+
+IBPM provide some rest api which operation name is setData through that we can inject values.
+
+What is the difference between process app and toolkit?
+
+Process App is deployable, whereas toolkit is not deployable. Instead, it is integrated.
+
+What must be done to change business object type value?
+
+For achieving the task, bpd must be altered and a snapshot is created and redeployed.
+
+What is the current version available in market for IBM BPM?
+
+Version 8.5
+
+What is the snapshot in BPM?
+
+Snapshot is as simple as Version management.
+
+Does IBM BPM v.85 support Milestone?
+
+No. Milestone is deprecated  in V8.5. Now, It support phase instead of milestone.
+
+How a BPD can be divided into?
+
+The BPD can be divided into Lanes and Milestones. The horizontal lines are called Lanes and vertical ones are called Milestones.
+
+What is Rule Set or rule group?
+
+A rule set is a group of if/then statements or rules where the if is the condition and the then is the action of the rule. Rule sets are best suited for those business rules that have very few condition clauses.
+
+What is Business State Machine?
+
+Business state machines are service components that allow you to represent business processes based on states and events instead of a sequential business process model.
+
+Business state machines specify the sequences of states, responses, and actions that an object or an interaction goes through in response to events.
+
+What is BPC and how can it will be useful?
+
+BPC is a Business Process Choreography. It used for monitor Process Instance, Process Template and human task Instance, Human task Template.
+
+What is CGI and how it will be used?
+
+CEI enhances compact event-management services, like consolidating raw events via multiple, heterogeneous sources and distributing them to event consumers. It enables functionality for generation, propagation, persistence, and consumption of events representing service component processes.
+
+What are different types of Human Tasks?
+
+To-do task – a service schedules a piece of work for a person to perform.
+
+Invocation task – a person uses a service.
+
+Collaboration task – one person assigns work to another person.
+
+Administration task – a person is granted administrative powers over an activity or process.
